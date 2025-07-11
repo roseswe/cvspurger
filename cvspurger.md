@@ -20,7 +20,7 @@ CVS Purger is a bash script utility designed to reduce CVS repository size by pu
 ## Features
 
 - **Selective Processing:** Process all files (in the current directory) or a specific file.
-- **Clear Console Output:** Provides detailed feedback using UTF-8 charsacters on the purging process.
+- **Clear Console Output:** Provides detailed feedback using UTF-8 characters on the purging process.
 - **Lightweight & Efficient:** Quickly reduces CVS repository size without manual intervention.
 
 
@@ -78,7 +78,9 @@ CVS Purger Script - purges CVS ,v files with too many revisions to reduce the si
 🆗 Notes.txt, 1 revisions
 🆗 SingleHardDisk-QEMU.sh, 15 revisions
 [Info]  All done!  Bye...
-
+````
+If you recheck the file, you see it's truncated to four revisions:
+````
 $ cvspurger.sh -f c.rar
 CVS Purger Script - purges CVS ,v files with too many revisions to reduce the size...
 🆗 c.rar, 4 revisions
@@ -86,4 +88,4 @@ CVS Purger Script - purges CVS ,v files with too many revisions to reduce the si
 ````
 
 ## End
-@(#) $Id: cvspurger.md,v 1.1 2025/07/11 12:43:32 ralph Exp $
+<!-- @(#) $Id: cvspurger.md,v 1.2 2025/07/11 12:55:28 ralph Exp $ -->
