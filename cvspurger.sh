@@ -1,7 +1,7 @@
 #!/bin/bash
-# filepath: $Header: /home/cvs/src/prj/cvspurger/cvspurger.sh,v 1.7 2025/07/11 12:45:11 ralph Exp $
+# filepath: $Header: /home/cvs/src/prj/cvspurger/cvspurger.sh,v 1.8 2025/09/17 15:04:23 ralph Exp $
 # (c) 2020-2025 by ROSE_SWE, Ralph Roth
-# @(#) $Id: cvspurger.sh,v 1.7 2025/07/11 12:45:11 ralph Exp $
+# @(#) $Id: cvspurger.sh,v 1.8 2025/09/17 15:04:23 ralph Exp $
 
 show_help() {
     echo "Usage: $(basename "$0") [OPTIONS]"
@@ -14,7 +14,7 @@ show_help() {
 }
 
 show_version() {
-    echo "Version: @(#) $Id: cvspurger.sh,v 1.7 2025/07/11 12:45:11 ralph Exp $"
+    echo "Version: @(#) $Id: cvspurger.sh,v 1.8 2025/09/17 15:04:23 ralph Exp $"
     echo "(c) 2020-2025 by ROSE_SWE, Ralph Roth - All rights reserved."
 }
 
@@ -108,7 +108,7 @@ get_purge_range() {
     echo "$purge_range"
 }
 
-echo "CVS Purger Script - purges CVS ,v files with too many revisions to reduce the size..."
+echo "CVS Purger Script - purges CVS ,v files with too many revisions ($revision_limit) to reduce the size..."
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 
